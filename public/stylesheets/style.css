@@ -1,0 +1,115 @@
+body {
+	background: purple;
+	font-size: 16px;
+}
+
+.container {
+	width: 60%;
+	margin: auto;
+	text-align: center;
+	font-family: arial;
+	color: white;
+}
+
+#getInfo {
+	margin-top: 10px;
+	float: right;
+	border: none;
+	height: 40px;
+	width: 120px;
+	font-family: arial;
+	font-size: 14px;
+	border-radius: 2px;
+	box-shadow: 1px 2px 4px 0 black;
+
+}
+/*
+h1 {
+	margin-top: 160px;
+}
+p {
+	font-size: 16px;
+}
+*/
+
+input {
+	width: 90%;
+	margin: 10px;
+	padding: 3px;
+	height: 32px;
+	border: none;
+	font-family: arial;
+	font-size: 20px;
+	border-radius: 2px;
+	box-shadow: 1px 2px 4px 0 black;
+}
+
+h2{
+	color: #0264c1;
+}
+
+#signIn {
+	margin-top: 20px;
+	border: none;
+	height: 40px;
+	width: 120px;
+	font-family: arial;
+	font-size: 14px;
+	border-radius: 2px;
+	box-shadow: 1px 2px 4px 0 black;
+	margin-bottom: 40px;
+
+}
+
+#intro {
+	margin-top: 150px;
+	text-align: center;
+}
+
+#intro p {
+	margin-top: 40px;
+	font-size: 20px;
+}
+
+body#view {
+	background: #ba0e52;
+	color: white;
+	text-align: center;
+	padding-top: 120px;
+
+}
+
+#view table {
+	font-size: 18px;
+	width: 96%;
+	margin:x auto none auto;
+	font-family: arial;
+	border: none;
+
+}
+#view table th {
+	border-bottom: 2px solid white;
+}
+
+
+.button {
+	background: #0264c1;
+	color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

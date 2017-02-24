@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+
+
+<html>
+    <head>
+        <title>Jovins | View History</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./stylesheets/style.css">
+    </head>
+    <body id="view">
+        <div id="container">
+            <div id="attendeeInfo">
+
+            <h1>Data View</h1>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>First Name</td>
+                        <td>Last Name</td>
+                        <td>Email</td>
+                        <td>Phone</td>
+                        <td>Address</td>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr>
+                <%for (key in views){%>
+                    <td><%= views[key].firstname %></td> 
+                    <td><%= views[key].lastname %></td>
+                    <td><%= views[key].email %></td>
+                    <td><%= views[key].phone %></td>
+                    <td><%= views[key].address %></td>
+                    <td><%= views[key].eventname %></td>
+                <% } %>
+                </tr>
+                </tbody>
+            </table>
+
+            </div>
+
+        </div>
+    </body>
+</html>

@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jovins.com | <%= title %></title>
+	<script type="text/javascript" src="./javascripts/main.js" ></script>
+	<link rel="stylesheet" href="./stylesheets/style.css">
+</head>
+<body>
+	<div class="container">
+
+		<form action="/view" method="GET">
+		<button id="getInfo" class="button" name="viewbutton">View Attendees</button>
+		</form>
+		<br/>
+
+		<div id="intro">
+		<h1>Welcome to our e-Register</h1>
+		<br/>
+		<p>Say Good bye to book registers, lose of data to emergencies. Keeping track of registration data, its retrieval and usage has never been this easy and efficient.
+		</p>
+		</div>
+
+
+
+		<br/>
+		<form action="/details" method="POST">
+			<h2>Event Details<h2>
+			<br/>
+			<input id="event_name" type="text" placeholder="Event name" name="eventname">
+			<br/>
+			<input id="location" type="text" placeholder="Location" name="location">
+			<br/>
+			<input id="date" type="date" name="date">
+			<br/>
+			<h2>Attendee Details</h2>
+			<br/>
+			<input id="firstname" type="text" placeholder="First Name" name="firstname">
+			<br/>
+			<input id="lastname" type="text" placeholder="Last Name" name="lastname">
+			<br/>
+			<input id="email" type="text" placeholder="Email" name="email">
+			<br/>
+			<input id="phone" type="text" placeholder="Phone" name="phone">
+			<br/>
+			<input id="address" type="text" placeholder="Address" name="address">
+			<br/>
+			<button class="button" id="signIn">Sign In</button>
+
+			<br/>
+			<ul>
+				<% if(error){ %>
+					<% error.forEach(function(err){ %>
+						<li><span style="color:orange"><%= err.msg %></span></li>
+				<% })} %>
+			</ul>
+			
+			
+		</form>
+
+	</div>
+</body>
+</html>
