@@ -74,12 +74,14 @@ app.get('/view', function(req, res, next) {
 	register = register.child('Events');
 	register.on("value", function(snapshot) {
 		var data = snapshot.val();
+		console.log(data);
 		res.render("attendanceDetailView.ejs", {views: data} );
 	});
 	
 	}, function (errorObject) {
   		console.log("The read failed: " + errorObject.code);
 	});
+
 
 
 
@@ -121,8 +123,9 @@ app.post('/details', function(req, res, next){
 
 })
 
+var port = process.env.PORT;
 
-app.listen(3000, function(){
+app.listen(port, function(){
 	console.log('server started on port 3000...');
 });
 
