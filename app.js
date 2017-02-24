@@ -123,9 +123,9 @@ app.post('/details', function(req, res, next){
 
 })
 
-var port = process.env.PORT;
+var port = process.env.PORT || 8000;
 
 app.listen(port, function(){
-	console.log('server started on port 3000...');
-});
+	console.log('server started on port '+port);
+})
 
